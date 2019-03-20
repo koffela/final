@@ -1,0 +1,237 @@
+html{
+  background-color: #ededed;
+  background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg');
+}
+body {
+  margin: 0 40px 0 40px;
+  
+  background-color: #ededed;
+  
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 231, 204);
+}
+
+li.link a {
+  color: blue;
+  font-family: Helvetica, Helvetica,Verdana,Arial,sans-serif;
+}
+
+li.nav a {
+  float: left;
+  display: block;
+  color: black;
+  font-family: Helvetica, Helvetica,Verdana,Arial,sans-serif;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+
+}
+
+
+li.nav a:hover {
+  background-color: rgb(243, 175, 112);
+} 
+
+.sidebar {
+        grid-area: sidebar;
+    }
+
+.content {
+        grid-area: content;
+    }
+
+.header {
+        grid-area: header;
+        
+        
+        text-align: center;
+    }
+a.channelButton{
+  background-color: rgb(243, 175, 112);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.sendButton{
+  background-color: darkblue; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.usernameButton{
+  background-color: rgb(153, 94, 94); 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-areas:
+              
+              "header header header"
+               "sidebar content content";
+               background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg');
+        color: #444;
+    }
+.box {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  color: black;
+  
+  padding: 20px;
+  
+  
+}
+
+
+
+
+
+.header {
+  background-color: Black;
+  color: whitesmoke;
+}
+
+div.currentMessage{
+  
+}
+
+img.center{
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.item{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+
+.subheader{
+  text-align: left;
+}
+
+.image1{
+  float: left;
+  padding: 0 5px 0 0;
+}
+
+.left{
+  float: left;
+  clear: both;
+  width: 500px;
+}
+
+
+
+@media screen and (min-width:200px) and (max-width: 479px) {
+  
+  .wrapper{
+      grid-template-columns: 300px 1fr 1fr;
+        grid-template-areas:
+               "header header  header"
+              "content content content"
+              "sidebar sidebar sidebar";
+  }
+  .sidebar {
+      grid-area: sidebar;
+  }
+  
+    
+  
+
+  
+} /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+
+  @media screen and (min-width:480px) and (max-width: 599px)  {
+      
+  .wrapper{
+      grid-template-columns: 300px 1fr 1fr;
+        grid-template-areas:
+               "header header  header"
+              "content content content"
+              "sidebar sidebar sidebar";
+  }
+  .sidebar {
+      grid-area: sidebar;
+   }  
+
+
+} /* smartphones, Android phones, landscape iPhone */ 
+
+
+  @media screen and (min-width:600px) and (max-width: 800px)  {
+
+    .wrapper{
+      grid-template-columns: 300px 1fr 1fr;
+        grid-template-areas:
+               "header header  header"
+              "content content content"
+              "sidebar sidebar sidebar";
+  }
+  .sidebar {
+      grid-area: sidebar;
+   }  
+   
+  } /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+
+
+  @media screen and (min-width:801px) and (max-width: 1000px)  {
+    
+   
+  }
+     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+
+  @media screen and (min-width:1001px) and (max-width:1280px){
+  
+  
+}
+  
+  
+  
+  /* big landscape tablets, laptops, and desktops */ 
+
+
+  @media screen and (min-width:1281px)and (max-width: 1920px) {
+   
+    
+  /* hi-res laptops and desktops */
+  }
+
+  @media screen and (min-width:1921px)and (max-width: 3840px) {
+    
+    
+  /* hi-res laptops and desktops */
+  }
+  

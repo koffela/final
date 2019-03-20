@@ -1,0 +1,23 @@
+{
+ "name": "chatapp",
+ "version": "1.0.0",
+ "description": "a chat app",
+ "engines": {},
+ "main": "server.js",
+ "scripts": {
+  "start": "node server.js"
+ },
+ "keywords": [
+  "express",
+  "heroku"
+ ],
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+  "body-parser": "^1.18.3",
+  "express": "^4.16.4",
+  "nodemon": "^1.18.10",
+  "pug": "^2.0.3",
+  "socket.io": "*"
+ }
+}
